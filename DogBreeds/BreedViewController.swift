@@ -25,6 +25,8 @@ final class BreedViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        guard breed != nil else {return}
+            
         title = breed.name
         
         view.layer.backgroundColor = UIColor(named: "BreedBackground")?.cgColor
